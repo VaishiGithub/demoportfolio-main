@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Vaishnavi Pandey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold tracking-tighter flex items-center">
+                        <span class="text-gradient">Vaishnavi</span><span class="text-white ml-1">Pandey </span>
+                    </a>
+                </div>
+                <div class="hidden md:flex flex-1 justify-center space-x-8 items-center">
+                    <a href="index.html" class="nav-link text-slate-300 hover:text-white transition-colors">Home</a>
+                    <a href="about.html" class="nav-link text-indigo-400 hover:text-white transition-colors">About</a>
+                    <a href="skills.html" class="nav-link text-slate-300 hover:text-white transition-colors">Skills</a>
+                    <a href="index.html#projects" class="nav-link text-slate-300 hover:text-white transition-colors">Projects</a>
+                    <a href="index.html#contact" class="nav-link text-slate-300 hover:text-white transition-colors">Contact</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="https://drive.google.com/file/d/1Sb8L8PcFnecC56Vw68cmj_qNixllDVyi/view?usp=drive_link" class="btn-gradient text-sm shadow-lg shadow-indigo-500/20">
+                        <i class="far fa-file-alt"></i> Resume
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-nav border-t border-white/5">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block px-3 py-2 rounded-md font-medium text-slate-300 hover:text-white hover:bg-white/5">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md font-medium text-white bg-white/5">About</a>
+                <a href="skills.html" class="block px-3 py-2 rounded-md font-medium text-slate-300 hover:text-white hover:bg-white/5">Skills</a>
+                <a href="index.html#projects" class="block px-3 py-2 rounded-md font-medium text-slate-300 hover:text-white hover:bg-white/5">Projects</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md font-medium text-slate-300 hover:text-white hover:bg-white/5">Contact</a>
+                <a href="https://drive.google.com/file/d/1Sb8L8PcFnecC56Vw68cmj_qNixllDVyi/view?usp=drive_link" class="block px-3 py-2 rounded-md font-medium text-indigo-400 mt-4 border border-indigo-500/30 text-center">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+            <h1 class="text-5xl font-bold text-white mb-6 tracking-tight">About <span class="text-gradient">Me</span></h1>
+            <p class="text-slate-400 max-w-2xl mx-auto text-lg">My journey, experiences, and what drives me to create impactful digital products.</p>
+        </div>
+    </section>
+
+    <!-- Overview Section (Who am I & Features) -->
+    <section class="py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Left: Who am I -->
+                <div class="lg:col-span-5 space-y-6 reveal">
+                    <div class="glass-card p-8 sm:p-10 h-full flex flex-col justify-center">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-6 border border-indigo-500/20">
+                            <i class="far fa-user text-2xl text-indigo-400"></i>
+                        </div>
+                        <h4 class="text-3xl font-bold mb-6 text-white">Who am I?</h4>
+                        <p class="text-slate-300 leading-relaxed text-lg">
+                   I am Vaishnavi Pandey, a Full Stack Developer passionate about building intuitive user interfaces and developing efficient, scalable backend systems. I enjoy turning complex ideas into seamless digital experiences.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed mt-4">
+                            I am open to collaborating with tech leads and peers on innovative projects. My goal is to build seamless web applications while continuously expanding my technical horizons.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right: Feature Cards -->
+                <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6 reveal">
+                    <div class="glass-card p-8 relative overflow-hidden group">
+                        <div class="absolute -right-6 -top-6 w-24 h-24 bg-indigo-500/10 blur-2xl rounded-full transition-all group-hover:bg-indigo-500/20"></div>
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-6 border border-indigo-500/20">
+                            <i class="fas fa-code text-indigo-400 text-xl group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-white">Frontend Development</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Building responsive and accessible web applications using HTML, CSS, JavaScript, and modern frameworks like React. Focused on clean design, performance, and seamless user experiences.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8 relative overflow-hidden group">
+                        <div class="absolute -right-6 -top-6 w-24 h-24 bg-purple-500/10 blur-2xl rounded-full transition-all group-hover:bg-purple-500/20"></div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-6 border border-purple-500/20">
+                            <i class="fas fa-server text-purple-400 text-xl group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-white">Backend Engineering</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Learning and applying backend development to build robust APIs, manage databases efficiently, and create scalable logic for complex applications.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8 md:col-span-2 relative overflow-hidden flex flex-col sm:flex-row items-start sm:items-center gap-6 group">
+                        <div class="absolute right-0 bottom-0 w-32 h-32 bg-indigo-600/10 blur-3xl rounded-full transition-all group-hover:bg-indigo-600/20"></div>
+                        <div class="w-14 h-14 shrink-0 rounded-xl bg-indigo-500/10 flex items-center justify-center border border-indigo-500/20">
+                            <i class="fas fa-globe text-3xl text-indigo-400 group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-white">Open Source</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed max-w-lg">
+                                Enthusiastic about contributing to the open-source community by collaborating on projects, sharing insights, and turning ideas into accessible, impactful code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Dive Timeline (Journey, Experience, Education) -->
+    <section class="py-16 pb-32 relative z-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <!-- Journey -->
+            <div class="glass-card rounded-[2rem] p-8 sm:p-10 reveal border-t-4 border-t-indigo-500 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-40 h-40 bg-indigo-500/10 blur-3xl rounded-full group-hover:bg-indigo-500/20 transition-all"></div>
+                <div class="flex items-center gap-4 mb-6 relative z-10">
+                    <div class="w-12 h-12 rounded-xl glass border border-indigo-400/30 flex items-center justify-center bg-indigo-400/10">
+                        <i class="fas fa-route text-indigo-400 text-xl group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white">My Journey</h3>
+                </div>
+                <div class="text-slate-300 leading-relaxed space-y-4 relative z-10">
+                    <p class="text-lg">
+                        I am currently pursuing a Bachelor of Technology in Computer Science and Engineering at Lovely Professional University.
+                    </p>
+                    <p class="text-slate-400">
+                       My journey started with C++ and OOP-based projects, and evolved into full-stack development, where I built platforms for real-world problems like healthcare coordination and secure online examinations. With a strong foundation in DSA and a passion for clean, efficient code, I aim to create seamless, impactful digital experiences.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="glass-card rounded-[2rem] p-8 sm:p-10 reveal border-t-4 border-t-purple-500 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-40 h-40 bg-purple-500/10 blur-3xl rounded-full group-hover:bg-purple-500/20 transition-all"></div>
+                <div class="flex items-center gap-4 mb-6 relative z-10">
+                    <div class="w-12 h-12 rounded-xl glass border border-purple-400/30 flex items-center justify-center bg-purple-400/10">
+                        <i class="fas fa-briefcase text-purple-400 text-xl group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white">Training </h3>
+                </div>
+                <div class="text-slate-300 leading-relaxed space-y-4 relative z-10">
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-colors">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                            <h4 class="text-xl font-bold text-white">Full Stack & Backend Developer (Fresher)</h4>
+                            <span class="text-purple-400 text-sm font-medium mt-1 sm:mt-0 bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">Jun 2025 - Jul 2025</span>
+                        </div>
+                        <h5 class="text-indigo-300 font-medium mb-4">CipherSchools</h5>
+                        <p class="text-slate-400 text-sm">
+                            Completed Data Structures and Algorithms (DSA) training in C++ at CipherSchools, strengthening problem-solving skills and understanding of core concepts like arrays, linked lists, stacks, queues, and trees.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="glass-card rounded-[2rem] p-8 sm:p-10 reveal border-t-4 border-t-fuchsia-500 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-40 h-40 bg-fuchsia-500/10 blur-3xl rounded-full group-hover:bg-fuchsia-500/20 transition-all"></div>
+                <div class="flex items-center gap-4 mb-6 relative z-10">
+                    <div class="w-12 h-12 rounded-xl glass border border-fuchsia-400/30 flex items-center justify-center bg-fuchsia-400/10">
+                        <i class="fas fa-graduation-cap text-fuchsia-400 text-xl group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white">Education</h3>
+                </div>
+                <div class="text-slate-300 leading-relaxed space-y-4 relative z-10">
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-fuchsia-500/30 transition-colors">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                            <h4 class="text-xl font-bold text-white">B.Tech in Computer Science</h4>
+                            <span class="text-fuchsia-400 text-sm font-medium mt-1 sm:mt-0 bg-fuchsia-500/10 px-3 py-1 rounded-full border border-fuchsia-500/20">Aug 2023 - Present</span>
+                        </div>
+                        <h5 class="text-indigo-300 font-medium mb-4">Lovely Professional University</h5>
+                        <p class="text-slate-400 text-sm flex items-center gap-2">
+                            <i class="fas fa-star text-yellow-500"></i> CGPA: <span class="text-white font-bold">7.11</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="text-slate-300 leading-relaxed space-y-4 relative z-10">
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-fuchsia-500/30 transition-colors">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                            <h4 class="text-xl font-bold text-white">Intermediate</h4>
+                            <span class="text-fuchsia-400 text-sm font-medium mt-1 sm:mt-0 bg-fuchsia-500/10 px-3 py-1 rounded-full border border-fuchsia-500/20">Mar 2021– May 2022</span>
+                        </div>
+                        <h5 class="text-indigo-300 font-medium mb-4">Apeejay School, Mahavir Marg </h5>
+                        <p class="text-slate-400 text-sm flex items-center gap-2">
+                            <i class="fas fa-star text-yellow-500"></i> Percentage: <span class="text-white font-bold">76.6%</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="text-slate-300 leading-relaxed space-y-4 relative z-10">
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-fuchsia-500/30 transition-colors">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+                            <h4 class="text-xl font-bold text-white">Matriculation</h4>
+                            <span class="text-fuchsia-400 text-sm font-medium mt-1 sm:mt-0 bg-fuchsia-500/10 px-3 py-1 rounded-full border border-fuchsia-500/20">Mar 2019– May 2020</span>
+                        </div>
+                        <h5 class="text-indigo-300 font-medium mb-4">Kendriya Vidyalaya Pulgaon</h5>
+                        <p class="text-slate-400 text-sm flex items-center gap-2">
+                            <i class="fas fa-star text-yellow-500"></i> Percentage: <span class="text-white font-bold">76.6%</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 bg-[#030014] pt-12 pb-8 relative z-10 w-full mb-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+                <a href="#" class="text-2xl font-bold tracking-tighter flex items-center">
+                    <span class="text-gradient">Vaishnavi</span><span class="text-white ml-1">Pandey </span>
+                </a>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/VaishiGithub" class="text-slate-400 hover:text-white transition-colors bg-white/5 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-500 border border-white/5 hover:border-transparent">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vaishnavipandey22" class="text-slate-400 hover:text-white transition-colors bg-white/5 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-500 border border-white/5 hover:border-transparent">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm border-t border-white/5 pt-8">
+                <p>&copy; 2024 Vaishnavi Pandey. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

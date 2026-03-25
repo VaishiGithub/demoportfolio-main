@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Pandey | Portfolio</title>
+    <meta name="description" content="Portfolio of Ayush Sharma, a passionate Full Stack Developer.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold tracking-tighter flex items-center">
+                        <span class="text-gradient">Vaishnavi</span><span class="text-white ml-1">Pandey </span>
+                    </a>
+                </div>
+                <div class="hidden md:flex flex-1 justify-center space-x-8 items-center">
+                    <a href="index.html" class="nav-link text-slate-300 hover:text-white transition-colors">Home</a>
+                    <a href="about.html" class="nav-link text-slate-300 hover:text-white transition-colors">About</a>
+                    <a href="skills.html" class="nav-link text-slate-300 hover:text-white transition-colors">Skills</a>
+                    <a href="index.html#projects" class="nav-link text-slate-300 hover:text-white transition-colors">Projects</a>
+                    <a href="index.html#contact" class="nav-link text-slate-300 hover:text-white transition-colors">Contact</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                   <a href="https://drive.google.com/file/d/1Sb8L8PcFnecC56Vw68cmj_qNixllDVyi/view?usp=drive_link" class="btn-gradient text-sm shadow-lg shadow-indigo-500/20">
+                        <i class="far fa-file-alt"></i> Resume
+                          <a href="https://github.com/VaishiGithub" class="text-slate-300 hover:text-white transition-colors" aria-label="GitHub">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vaishnavipandey22" class="text-slate-300 hover:text-white transition-colors" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-nav border-t border-white/5">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block px-3 py-2 rounded-md font-medium text-white bg-white/5">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md font-medium text-slate-300 hover:text-white hover:bg-white/5">About</a>
+                <a href="skills.html" class="block px-3 py-2 rounded-md font-medium text-slate-300 hover:text-white hover:bg-white/5">Skills</a>
+                <a href="index.html#projects" class="block px-3 py-2 rounded-md font-medium text-slate-300 hover:text-white hover:bg-white/5">Projects</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md font-medium text-slate-300 hover:text-white hover:bg-white/5">Contact</a>
+                <a href="https://drive.google.com/file/d/1Sb8L8PcFnecC56Vw68cmj_qNixllDVyi/view?usp=drive_link" class="block px-3 py-2 rounded-md font-medium text-indigo-400 mt-4 border border-indigo-500/30 text-center">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="min-h-screen flex items-center justify-center pt-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left z-10 space-y-6 reveal">
+                    <p class="text-indigo-400 font-medium text-lg lg:text-xl tracking-wide">
+                        Hi there, I'm
+                    </p>
+                    <h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-white mb-2">
+                    Vaishnavi Pandey
+                    </h1>
+                    <h2 class="text-2xl lg:text-3xl font-semibold text-slate-300 h-10 mb-4">
+                        <span class="typed-text text-white"></span>
+                    </h2>
+                    <h3 class="text-xl font-medium text-slate-300">
+                        Passionate <span class="text-gradient font-bold">Full Stack Developer</span>
+                    </h3>
+                    <p class="text-lg text-slate-400 max-w-lg mx-auto lg:mx-0 leading-relaxed mt-4">
+                       I specialize in crafting high-quality, responsive web experiences using modern technologies like HTML, CSS, JavaScript, and React. Currently, I’m expanding my expertise in backend development to build robust, scalable applications, combining seamless user interfaces with powerful, data-driven systems.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-6">
+                        <a href="#projects" class="btn-gradient shadow-lg shadow-indigo-500/25">
+                            View My Work <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn-outline">
+                            Let's Talk <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Content -->
+                <div class="relative z-10 flex justify-center items-center mt-12 lg:mt-0 reveal">
+                    <!-- Glow behind profile -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full blur-3xl opacity-20 transform scale-90"></div>
+                    
+                    <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-full p-1 bg-gradient-to-br from-indigo-500 via-purple-500 to-fuchsia-600 group">
+                        <div class="w-full h-full rounded-full bg-[#030014] flex items-center justify-center overflow-hidden border-4 border-[#030014]">
+                            <!-- Placeholder Profile Image -->
+                            <img src="20231105_210728.jpg" alt="Vaishnavi Pandey" class="w-full h-full object-cover opacity-90 mix-blend-luminosity group-hover:mix-blend-normal group-hover:scale-105 transition-all duration-700">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section Snapshot -->
+    <section id="about" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
+                <div>
+                    <h2 class="text-4xl lg:text-5xl font-bold text-white heading-underline">About Me</h2>
+                </div>
+                <a href="about.html" class="mt-6 md:mt-0 flex items-center gap-2 btn-outline text-sm">
+                    Read More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Left: Who am I -->
+                <div class="lg:col-span-5 space-y-6 reveal">
+                    <div class="glass-card p-8 sm:p-10 h-full flex flex-col justify-center">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-6 border border-indigo-500/20">
+                            <i class="far fa-user text-2xl text-indigo-400"></i>
+                        </div>
+                        <h4 class="text-3xl font-bold mb-6 text-white">Who am I?</h4>
+                        <p class="text-slate-300 leading-relaxed text-lg">
+                          I am Vaishnavi Pandey, a Full Stack Developer passionate about building intuitive user interfaces and developing efficient, scalable backend systems. I enjoy turning complex ideas into seamless digital experiences.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed mt-4">
+                           I am open to collaborating with tech leads and peers on innovative projects. My goal is to build seamless web applications while continuously expanding my technical horizons.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right: Feature Cards -->
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 reveal">
+                    <div class="glass-card p-8 relative overflow-hidden group">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-6 border border-indigo-500/20">
+                            <i class="fas fa-code text-indigo-400 text-xl group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-white">Frontend Development</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                             Building responsive and accessible web applications using HTML, CSS, JavaScript, and modern frameworks like React. Focused on clean design, performance, and seamless user experiences.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8 relative overflow-hidden group">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-6 border border-purple-500/20">
+                            <i class="fas fa-server text-purple-400 text-xl group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-white">Backend Engineering</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Learning and applying backend development to build robust APIs, manage databases efficiently, and create scalable logic for complex applications.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8 sm:col-span-2 relative overflow-hidden group flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                        <div class="w-14 h-14 shrink-0 rounded-xl bg-indigo-500/10 flex items-center justify-center border border-indigo-500/20">
+                            <i class="fas fa-globe text-indigo-400 text-2xl group-hover:scale-110 transition-transform"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-white">Open Source Contributor</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed max-w-lg">
+                                Enthusiastic about contributing to the open-source community by collaborating on projects, sharing insights, and turning ideas into accessible, impactful code.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl lg:text-5xl font-bold text-white heading-underline mb-6">Featured Projects</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-lg mt-6">A selection of my recent work bridging frontend interfaces with robust backend architectures.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden group reveal flex flex-col h-full">
+                    <div class="h-48 relative overflow-hidden bg-[#0a0a1a]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#141423] via-transparent to-transparent z-10"></div>
+                        <div class="w-full h-full flex items-center justify-center group-hover:scale-105 transition-transform duration-700">
+                            <i class="fas fa-heartbeat text-5xl text-indigo-500/30"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 relative z-20 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors mb-2">Hemova</h4>
+                        <p class="text-slate-400 text-sm mb-6 flex-1">
+                           Developed a full-stack platform connecting blood donors with hospitals, improving registration workflows and coordination efficiency.
+Built responsive UI and admin dashboard using HTML, CSS, JavaScript, and PHP for streamlined data management.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="skill-tag px-3 py-1 text-xs">HTML/CSS/PHP</span>
+                        </div>
+                        <div class="flex gap-3 mt-auto">
+                             <a href="https://github.com/sahusateesh8737/Hemova" class="w-10 h-10 rounded-full border border-indigo-500/30 flex justify-center items-center text-indigo-400 hover:bg-indigo-500/10 transition-all"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden group reveal flex flex-col h-full" style="transition-delay: 100ms;">
+                    <div class="h-48 relative overflow-hidden bg-[#0a0a1a]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#141423] via-transparent to-transparent z-10"></div>
+                        <div class="w-full h-full flex items-center justify-center group-hover:scale-105 transition-transform duration-700">
+                            <i class="fas fa-robot text-5xl text-purple-500/30"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 relative z-20 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors mb-2">Secure Online Examination System</h4>
+                        <p class="text-slate-400 text-sm mb-6 flex-1">
+                         Engineered a secure exam platform with RBAC and multi-layered authentication to ensure data integrity and prevent unauthorized access.
+Implemented backend logic using PHP with session management and input validation for a reliable system.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="skill-tag px-3 py-1 text-xs">HTML/CSS/PHP</span>
+                        </div>
+                        <div class="flex gap-3 mt-auto">
+                             <a href="https://github.com/Ayush9924/exam" class="w-10 h-10 rounded-full border border-purple-500/30 flex justify-center items-center text-purple-400 hover:bg-purple-500/10 transition-all"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden group reveal flex flex-col h-full" style="transition-delay: 200ms;">
+                    <div class="h-48 relative overflow-hidden bg-[#0a0a1a]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#141423] via-transparent to-transparent z-10"></div>
+                        <div class="w-full h-full flex items-center justify-center group-hover:scale-105 transition-transform duration-700">
+                            <i class="fas fa-rocket text-5xl text-indigo-400/30"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 relative z-20 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors mb-2"> Dice Game </h4>
+                        <p class="text-slate-400 text-sm mb-6 flex-1">
+                            Built a console-based dice game using C++ and OOP principles with player management, scoring, and leaderboard features.
+Optimized performance and code structure using efficient data structures for smooth multi-player simulation.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="skill-tag px-3 py-1 text-xs">C++</span>
+                        </div>
+                        <div class="flex gap-3 mt-auto">
+                            
+                            <a href="https://github.com/VaishiGithub/project-cpp" class="w-10 h-10 rounded-full border border-indigo-500/30 flex justify-center items-center text-indigo-400 hover:bg-indigo-500/10 transition-all"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center reveal">
+                <a href="https://github.com/VaishiGithub" target="_blank" class="btn-gradient shadow-lg shadow-indigo-500/25">
+                    View More on GitHub <i class="fab fa-github ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative z-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Left: Contact Info -->
+                <div class="reveal">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-white heading-underline mb-8">Get In Touch</h2>
+                    <p class="text-slate-400 mb-10 max-w-md text-lg leading-relaxed mt-6">
+                        Whether you have a question, a project in mind, or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-center gap-6 group">
+                            <div class="w-14 h-14 rounded-full glass-card flex items-center justify-center shrink-0 border border-indigo-500/20 group-hover:border-indigo-400/50 transition-all">
+                                <i class="fas fa-envelope text-indigo-400 text-xl group-hover:scale-110 transition-transform"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-slate-400 text-sm font-medium mb-1">Email</h5>
+                                <a href="mailto:vaishnavipandey2809@gmail.com" class="text-white font-semibold text-lg hover:text-indigo-400 transition-colors">vaishnavipandey2809@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6 group">
+                            <div class="w-14 h-14 rounded-full glass-card flex items-center justify-center shrink-0 border border-purple-500/20 group-hover:border-purple-400/50 transition-all">
+                                <i class="fas fa-map-marker-alt text-purple-400 text-xl group-hover:scale-110 transition-transform"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-slate-400 text-sm font-medium mb-1">Location</h5>
+                                <p class="text-white font-semibold text-lg">India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="reveal">
+                    <form class="glass-card p-8 sm:p-10 space-y-6">
+                        <h3 class="text-2xl font-bold text-white mb-6">Send Me a Message</h3>
+                        <div class="grid grid-cols-1 gap-6">
+                            <div class="space-y-2 relative">
+                                <label for="name" class="text-sm text-slate-300 font-medium ml-1">Your Name</label>
+                                <input type="text" id="name" class="w-full bg-[#0a0a1a]/50 border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors placeholder-slate-600" placeholder="John Doe">
+                            </div>
+                            <div class="space-y-2 relative">
+                                <label for="email" class="text-sm text-slate-300 font-medium ml-1">Your Email</label>
+                                <input type="email" id="email" class="w-full bg-[#0a0a1a]/50 border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors placeholder-slate-600" placeholder="john@example.com">
+                            </div>
+                            <div class="space-y-2 relative">
+                                <label for="message" class="text-sm text-slate-300 font-medium ml-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full bg-[#0a0a1a]/50 border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors resize-none placeholder-slate-600" placeholder="How can I help you?"></textarea>
+                            </div>
+                        </div>
+                        <button type="button" class="w-full btn-gradient py-3.5 justify-center shadow-lg shadow-indigo-500/20 mt-4 rounded-xl">
+                            Send Message <i class="fas fa-paper-plane ml-1"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 bg-[#030014] pt-12 pb-8 relative z-10 w-full mb-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+                <a href="#" class="text-2xl font-bold tracking-tighter flex items-center">
+                    <span class="text-gradient">Vaishnavi</span><span class="text-white ml-1">Pandey </span>
+                </a>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/VaishiGithub" class="text-slate-400 hover:text-white transition-colors bg-white/5 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-500 border border-white/5 hover:border-transparent">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors bg-white/5 w-10 h-10 rounded-full flex items-center justify-center hover:bg-indigo-500 border border-white/5 hover:border-transparent">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm border-t border-white/5 pt-8">
+                <p>&copy; 2024 Vaishnavi Pandey. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
